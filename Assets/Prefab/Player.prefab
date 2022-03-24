@@ -123,6 +123,9 @@ GameObject:
   - component: {fileID: 2757156271488686938}
   - component: {fileID: 2757156271488686951}
   - component: {fileID: 2757156271488686948}
+  - component: {fileID: 8426037409735976959}
+  - component: {fileID: 8094674440899267888}
+  - component: {fileID: 8152554014085350567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -184,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e3e4c4161d46b4783800d4d469d70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tankFuil: 100
   tankSpeed: 1
 --- !u!50 &2757156271488686948
 Rigidbody2D:
@@ -206,3 +210,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8426037409735976959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757156271488686939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b34a902e7a488442bc6f75503096d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8094674440899267888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757156271488686939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdb00f99fa500a4f9f5dfdcbdd1cc81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 2757156270525888221}
+  shellPrefab: {fileID: 3089907385542541328, guid: 2d3b9ec1ad98c5245a18e85fda940139,
+    type: 3}
+  gunReload: 1
+--- !u!114 &8152554014085350567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757156271488686939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe2ef697eccd704e96b40233cda71eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 150
+  currentHealth: 0
