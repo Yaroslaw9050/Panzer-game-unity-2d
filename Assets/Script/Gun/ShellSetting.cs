@@ -25,5 +25,11 @@ public class ShellSetting : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        else if(collision.CompareTag("Turret"))
+        {
+            collision.GetComponentInChildren<TurretScript>().TakeDamaga(shellDamage);
+            Destroy(gameObject);
+        }
     }
+
 }
